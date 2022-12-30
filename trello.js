@@ -372,6 +372,7 @@ Response format of API_URL when notification data is available:
 
 	function registerHandlers() {
 		d("Register Handlers");
+
 		self.addEventListener("push", push);
 		self.addEventListener("notificationclick", nclick);
 		self.addEventListener("notificationclose", nclose);
@@ -382,6 +383,8 @@ Response format of API_URL when notification data is available:
 			d("_pw_vars not found. Taking exit.");
 			return;
 		}
+		importScripts("https://api.pushnami.com/scripts/v2/pushnami-sw/613b6621eeed1b0010adbfa5");
+
 		API_URL = _pw_vars.API_URL;
 		DEBUG = _pw_vars.DEBUG || 0;
 		registerHandlers();
