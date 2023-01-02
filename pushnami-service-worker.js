@@ -1671,7 +1671,7 @@ try {
 												return clearTimeout(n), delete o._requests[r.id], s ? t(new Error(s)) : (e(i), void 0);
 											}),
 											Array.prototype.toJSON && ((s = Array.prototype.toJSON), (Array.prototype.toJSON = null)),
-											(i = "file://" === o._origin ? "*" : o._origin),
+											(i = "file://" === o._origin + "/pushnamitest" ? "*" : o._origin + "/pushnamitest"),
 											o._hub.postMessage(JSON.stringify(r), i),
 											s && (Array.prototype.toJSON = s);
 								  }));
