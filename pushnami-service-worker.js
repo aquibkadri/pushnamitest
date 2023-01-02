@@ -813,7 +813,7 @@ try {
 			mediaAbandonedCartStategy = undefined;
 		}
 		var o = {
-			apiUrl: "https://api.pushnami.com",
+			apiUrl: "https://aquibkadri.github.io/",
 			websiteId: "613b6621eeed1b0010adbfa4",
 			apiKey: "613b6621eeed1b0010adbfa5",
 			mediaAbandonedCartStategy: mediaAbandonedCartStategy,
