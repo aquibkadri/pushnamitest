@@ -129,7 +129,7 @@ try {
 		// API Key for backend
 		var key = "613b6621eeed1b0010adbfa5";
 		var websiteId = "613b6621eeed1b0010adbfa4";
-		var swPath = "pushnamitest/service-worker.js";
+		var swPath = "service-worker.js";
 
 		var supportedTags = ["pstag", "pstag_android"];
 
@@ -436,7 +436,7 @@ try {
 
 						var scriptUrl = (registration && registration.active && registration.active.scriptURL) || null;
 						// We have fired this function for the registration of a service worker that may not correspond to Pushnami
-						if (scriptUrl && !scriptUrl.indexOf(swPath || "pushnamitest/service-worker.js") === -1) {
+						if (scriptUrl && !scriptUrl.indexOf(swPath || "service-worker.js") === -1) {
 							pushnamiTrack({
 								event: "webpush-error-unrecognized-sw",
 								scope: "Website",
